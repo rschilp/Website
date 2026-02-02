@@ -204,7 +204,6 @@ body::before {
    ========================================================= */
 .section-narrow {
   max-width: 900px;
-  max-height: fit-content;
   height: 600px;
 }
 
