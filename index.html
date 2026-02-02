@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Robert Schilp | Portfolio</title>
+  <title>Robert Schilp</title>
 
   <!-- CSS -->
   <link rel="stylesheet" href="styles.css" />
@@ -18,71 +18,64 @@
   <!-- Navigation -->
   <header class="navbar">
     <div class="nav-container">
-      <h1 class="logo">Robert Schilp</h1>
       <nav>
         <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="projects.html">Projects</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <!-- Hero -->
-  <section class="hero">
-    <div class="hero-content">
-      <h2>Data Science · Engineering · Builder</h2>
-      <p>
-        I build data-driven products, scalable systems, and clean user experiences.
-      </p>
-      <a href="#projects" class="btn-primary">View My Work</a>
-    </div>
+  <!-- Portrait Hero -->
+  <section class="hero hero-portrait">
+    <img
+      src="assets/portrait.jpg"
+      alt="Robert Schilp portrait"
+      class="portrait"
+    />
   </section>
 
-  <!-- About -->
-  <section id="about" class="section">
-    <h3>About Me</h3>
-    <p>
-      I’m a University of Michigan Data Science student interested in
-      machine learning, systems, and building real products from the ground up.
+  <!-- Bio Section -->
+  <section id="bio" class="section bio">
+    <p class="bio-text">
+      Hi — thanks for stopping by. I’m Robert Schilp.
+    </p>
+
+    <p class="bio-text">
+      I'm a data science senior at the University of Michigan. I recognized my passion for data science after watching Brad Pitt and Jonah Hill analyze baseball statistics in the movie "Moneyball." Since then, I've been dedicated to honing my skills in data analysis, machine learning, and statistical modeling.  
     </p>
   </section>
 
-  <!-- Projects -->
-  <section id="projects" class="section section-alt">
-    <h3>Projects</h3>
+  <!-- Image Gallery -->
+  <section id="gallery" class="section image-gallery">
+    <div class="gallery-grid">
+      <video autoplay muted loop playsinline>
+        <source src="assets/singing-video.mp4" type="video/mp4" />
+      </video>
 
-    <div class="projects-grid">
-      <div class="project-card">
-        <h4>Homestream</h4>
-        <p>
-          AI-powered real estate analysis platform for investors.
-        </p>
-      </div>
+      <img src="assets/life1.jpg" alt="Robert outdoors" />
+      <img src="assets/life2.jpg" alt="Robert working" />
 
-      <div class="project-card">
-        <h4>Bass ML</h4>
-        <p>
-          Machine learning models for predicting fish size and location.
-        </p>
-      </div>
+      <video autoplay muted loop playsinline>
+        <source src="assets/batting-cage.mp4" type="video/mp4" />
+      </video>
 
-      <div class="project-card">
-        <h4>Systems Projects</h4>
-        <p>
-          C++ data structures, indexing engines, and algorithmic simulations.
-        </p>
-      </div>
+      <img src="assets/life3.jpg" alt="Robert on the water" />
+      <img src="assets/life4.jpg" alt="Robert in the mountains" />
+      <img src="assets/life7.jpg" alt="Robert beekeeping" />
+      <img src="assets/life9.jpg" alt="Robert waterfall" />
+
+      <video autoplay muted loop playsinline>
+        <source src="assets/first-skiing.mp4" type="video/mp4" />
+      </video>
+
+      <img src="assets/life5.jpg" alt="Robert in the city" />
+      <img src="assets/life6.jpg" alt="Robert on a boat" />
+
+      <video autoplay muted loop playsinline>
+        <source src="assets/tigers-game.mp4" type="video/mp4" />
+      </video>
     </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="section">
-    <h3>Contact</h3>
-    <p>
-      Reach out via email or connect with me on GitHub and LinkedIn.
-    </p>
   </section>
 
   <!-- Footer -->
