@@ -153,6 +153,8 @@ body::before {
   color: #0b132b;
 }
 
+
+
 .section-alt {
   background: rgba(248, 250, 252, 0.9);
 }
@@ -163,14 +165,22 @@ body::before {
    ========================================================= */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 320px));
+  gap: 2rem;
+  justify-content: center;
 }
+
 
 
 /* =========================================================
    PROJECT CARDS
    ========================================================= */
+
+/* This centers the text inside projects - the project bio */
+.section p {
+  text-align: center;
+}
+
 .project-card {
   background: white;
   padding: 1.5rem;
@@ -179,12 +189,19 @@ body::before {
   transition: transform 0.25s ease;
   text-decoration: none;
   color: inherit;
+  padding: 1.25rem;
 }
 
 .project-card:hover {
   transform: translateY(-6px);
 }
 
+/* =========================================================
+   NARROW SECTION (PROJECT CARD CONTAINERS)
+   ========================================================= */
+.section-narrow {
+  max-width: 900px;
+}
 
 /* =========================================================
    PROJECT VISUALS
