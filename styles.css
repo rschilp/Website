@@ -135,7 +135,7 @@ body::before {
    GENERIC CONTENT SECTIONS
    ========================================================= */
 .section {
-  padding: 4rem 2rem;
+  padding: 1rem 2rem;
   margin: 3rem auto;
   background: rgba(248, 250, 252, 0.94);
   border-radius: 1.25rem;
@@ -148,8 +148,10 @@ body::before {
 
 .section h3 {
   font-size: 2rem;
-  margin-top: 2rem;
+  font-weight: 700;
+  margin-top: 1rem;
   margin-bottom: 1rem;
+  margin-top: 1rem;
   text-align: center;
   color: #0b132b;
 }
@@ -202,6 +204,8 @@ body::before {
    ========================================================= */
 .section-narrow {
   max-width: 900px;
+  max-height: fit-content;
+  height: 600px;
 }
 
 /* =========================================================
@@ -303,7 +307,8 @@ body::before {
 .bio-text {
   font-size: 1.5rem;
   color: #1c2541;
-  margin-bottom: 1.75rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 
 
