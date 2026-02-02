@@ -1,8 +1,5 @@
 /* =========================================================
    GLOBAL RESET & BASE TYPOGRAPHY
-   ---------------------------------------------------------
-   - Normalizes spacing across browsers
-   - Sets default font, text color, and line spacing
    ========================================================= */
 * {
   box-sizing: border-box;
@@ -16,11 +13,9 @@ body {
   color: #0b132b;
 }
 
+
 /* =========================================================
    BACKGROUND: OCEAN / WATER MOTION
-   ---------------------------------------------------------
-   - Animated gradient gives slow underwater movement
-   - Pseudo-elements add light caustics + drifting particles
    ========================================================= */
 body {
   background: linear-gradient(
@@ -40,7 +35,6 @@ body {
   100% { background-position: 0% 50%; }
 }
 
-/* Light caustic glow (soft moving light patches) */
 body::after {
   content: "";
   position: fixed;
@@ -58,7 +52,6 @@ body::after {
   to   { transform: translate(2%, 1%) scale(1.05); }
 }
 
-/* Floating particle dots (subtle depth effect) */
 body::before {
   content: "";
   position: fixed;
@@ -77,10 +70,17 @@ body::before {
 
 
 /* =========================================================
+   PAGE WRAPPER (RESTORED — CRITICAL)
+   ========================================================= */
+.main-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+
+/* =========================================================
    NAVIGATION BAR
-   ---------------------------------------------------------
-   - Sticky top navigation
-   - Centered links
    ========================================================= */
 .navbar {
   background: rgba(248, 250, 252, 0.95);
@@ -106,7 +106,7 @@ body::before {
 }
 
 .nav-links a {
-  font-size: 1.4rem;     /* controls nav text size */
+  font-size: 1.4rem;
   font-weight: 600;
   text-decoration: none;
   color: #1c2541;
@@ -119,39 +119,47 @@ body::before {
 
 
 /* =========================================================
+   HERO IMAGE (HOME PAGE — RESTORED)
+   ========================================================= */
+.hero-image {
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto 2.5rem;
+  display: block;
+  border-radius: 1.25rem;
+  box-shadow: 0 20px 40px rgba(11, 19, 43, 0.25);
+}
+
+
+/* =========================================================
    GENERIC CONTENT SECTIONS
-   ---------------------------------------------------------
-   - Used for Projects, Personal Projects, School Projects
-   - White "card" on top of ocean background
    ========================================================= */
 .section {
   padding: 4rem 2rem;
-  max-width: 1100px;
   margin: 3rem auto;
   background: rgba(248, 250, 252, 0.94);
   border-radius: 1.25rem;
   box-shadow: 0 20px 40px rgba(11, 19, 43, 0.15);
 }
 
-/* Section headers (e.g. "Personal Projects") */
+.section + .section {
+  margin-top: 4rem;
+}
+
 .section h3 {
-  font-size: 2rem;          /* header size */
-  margin-bottom: 2.5rem;   /* spacing below header */
-  text-align: center;      /* centers section titles */
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
   color: #0b132b;
 }
 
-/* Slightly different background for alternating sections */
 .section-alt {
   background: rgba(248, 250, 252, 0.9);
 }
 
 
 /* =========================================================
-   PROJECT GRIDS (PERSONAL + SCHOOL)
-   ---------------------------------------------------------
-   - Responsive grid layout
-   - Reused across pages
+   PROJECT GRIDS
    ========================================================= */
 .projects-grid {
   display: grid;
@@ -161,9 +169,7 @@ body::before {
 
 
 /* =========================================================
-   PROJECT CARDS (BASE)
-   ---------------------------------------------------------
-   - Shared card styling
+   PROJECT CARDS
    ========================================================= */
 .project-card {
   background: white;
@@ -171,7 +177,7 @@ body::before {
   border-radius: 1rem;
   box-shadow: 0 12px 24px rgba(11, 19, 43, 0.1);
   transition: transform 0.25s ease;
-  text-decoration: none;   /* removes underline when card is a link */
+  text-decoration: none;
   color: inherit;
 }
 
@@ -181,10 +187,7 @@ body::before {
 
 
 /* =========================================================
-   PERSONAL PROJECT VISUALS (Homestream / BassMaster)
-   ---------------------------------------------------------
-   - Ensures logos are not cropped
-   - Keeps consistent aspect ratio
+   PROJECT VISUALS
    ========================================================= */
 .project-visual {
   text-align: center;
@@ -193,8 +196,8 @@ body::before {
 .project-image {
   width: 100%;
   height: 220px;
-  object-fit: contain;     /* prevents image cut-off */
-  padding: 1.25rem;        /* breathing room around logos */
+  object-fit: contain;
+  padding: 1.25rem;
   background: #ffffff;
   border-radius: 1rem;
   margin-bottom: 1rem;
@@ -202,7 +205,6 @@ body::before {
   box-shadow: 0 14px 28px rgba(11, 19, 43, 0.18);
 }
 
-/* Project name under image */
 .project-visual h4 {
   font-size: 1.3rem;
   font-weight: 600;
@@ -211,16 +213,15 @@ body::before {
 
 
 /* =========================================================
-   PROJECT DETAIL PAGES (INDIVIDUAL PROJECT VIEW)
-   ---------------------------------------------------------
-   - Used on homestream.html, bassmaster.html
+   PROJECT DETAIL PAGES
    ========================================================= */
 .project-detail {
   max-width: 900px;
+  margin: 0 auto;
 }
 
 .project-detail h1 {
-  font-size: 2.75rem;      /* main project title */
+  font-size: 2.75rem;
   text-align: center;
   margin-bottom: 0.5rem;
 }
@@ -241,9 +242,7 @@ body::before {
 
 
 /* =========================================================
-   BIO TEXT (HOME PAGE)
-   ---------------------------------------------------------
-   - Centers and enlarges personal text
+   BIO TEXT
    ========================================================= */
 .bio {
   text-align: center;
@@ -260,8 +259,6 @@ body::before {
 
 /* =========================================================
    IMAGE / VIDEO GALLERY
-   ---------------------------------------------------------
-   - Shared styling for images and videos
    ========================================================= */
 .gallery-grid {
   display: grid;
@@ -286,8 +283,6 @@ body::before {
 
 /* =========================================================
    FOOTER
-   ---------------------------------------------------------
-   - Simple, unobtrusive footer
    ========================================================= */
 .footer {
   margin-top: 4rem;
