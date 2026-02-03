@@ -261,7 +261,7 @@ body::before {
    ========================================================= */
 .project-hero {
   width: 100%;
-  max-width: 500px;   /* 👈 control size here */
+  max-width: 400px;   /* 👈 control size here */
   margin: 0 auto 3rem;
   display: block;
   border-radius: 1.25rem;
@@ -269,8 +269,8 @@ body::before {
 }
 /*Container*/
 .project-hero-container {
-  max-width: 600px;
-  height: 530px;
+  max-width: 400px;
+  height: 400px;
   margin: 0 auto 3rem;
   padding: 1.25rem;
   background: rgba(248, 250, 252, 0.95);
