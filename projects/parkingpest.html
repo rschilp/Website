@@ -1,1 +1,105 @@
-<div id="navbar"></div>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parking Pest | Robert Schilp</title>
+
+  <link rel="stylesheet" href="../styles.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="navbar">
+  <div class="nav-container">
+    <!-- Left: Home icon -->
+    <a href="../index.html" class="nav-home">
+      <img src="../assets/home1.png" alt="Home" class="home-icon" />
+    </a>
+
+    <!-- Right: Navigation links -->
+    <nav>
+      <ul class="nav-links">
+        <li><a href="../projects.html">Projects</a></li>
+        <li><a href="../bio.html">Bio</a></li>
+        <li><a href="../hobbies.html">Hobbies</a></li>
+        <li><a href="../assets/resume.pdf" target="_blank">Resume</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+  <!-- Project Content -->
+  <section class="section project-detail">
+    <h1 class="project-title">Parking Pest</h1>
+    <p class="project-tagline">
+      Data-driven analysis of parking violations and enforcement behavior.
+    </p>
+
+    <div class="parkingpest-hero-container">
+      <img src="../assets/parking-pest.jpg" alt="Parking Pest preview" class="project-hero" />
+    </div>
+
+    <h3>Overview</h3>
+    <p>
+      Parking Pest is a data analysis project designed to explore patterns in parking
+      enforcement, vehicle traffic, and violation behavior over time. By aggregating
+      high-frequency numerical data collected from multiple parking locations, the
+      project provides insight into when and where violations are most likely to occur.
+      The goal is to replace anecdotal assumptions about parking enforcement with
+      measurable, reproducible analysis.
+    </p>
+
+    <h3>Why I Built It</h3>
+    <p>
+      I built Parking Pest to better understand how real-world operational data can
+      reveal behavioral patterns at scale. Parking enforcement is a system that affects
+      thousands of people daily, yet its dynamics are rarely examined quantitatively.
+      This project allowed me to work with large time-series datasets, explore
+      seasonality and anomalies, and think critically about how data-driven insights
+      could inform both users and policymakers.
+    </p>
+
+    <h3>My Role</h3>
+    <p>
+      I designed the end-to-end data pipeline for Parking Pest, including preprocessing,
+      aggregation, and exploratory analysis of time-series data. I implemented
+      statistical summaries and visualizations to identify trends in violation rates,
+      vehicle flow, and enforcement intensity. Throughout the project, I focused on
+      building clean, reproducible analysis workflows that could scale as additional
+      locations or time periods were added.
+    </p>
+
+    <h3>Key Findings</h3>
+    <ul>
+      <li>Violation rates vary significantly by time of day and day of week.</li>
+      <li>High vehicle volume does not always correlate with higher enforcement activity.</li>
+      <li>Seasonal patterns play a meaningful role in both traffic and violations.</li>
+    </ul>
+
+    <h3>My Takeaways</h3>
+    <ul>
+      <li>Time-series data requires careful preprocessing to avoid misleading conclusions.</li>
+      <li>Visual exploration is critical for identifying patterns before modeling.</li>
+      <li>Real-world data is noisy, but structure emerges with sufficient scale.</li>
+      <li>Clear communication of results matters as much as the analysis itself.</li>
+    </ul>
+
+    <div class="gallery-grid">
+      <img src="../assets/parking-pest-1.png" alt="Parking Pest data visualization" />
+      <img src="../assets/parking-pest-2.png" alt="Parking Pest time series analysis" />
+      <img src="../assets/parking-pest-3.png" alt="Parking Pest summary dashboard" />
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 Robert Schilp</p>
+  </footer>
+</body>
+
+</html>
