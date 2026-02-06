@@ -118,16 +118,36 @@ body::before {
 }
 
 
-/* =========================================================
-   HERO IMAGE (HOME PAGE — RESTORED)
-   ========================================================= */
+/* HERO IMAGE GROUP */
+.hero-group {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+/* Main hero (unchanged, but scoped nicely) */
 .hero-image {
   width: 100%;
   max-width: 420px;
-  margin: 0 auto 2.5rem;
-  display: block;
   border-radius: 1.25rem;
   box-shadow: 0 20px 40px rgba(11, 19, 43, 0.25);
+}
+
+/* Side images */
+.hero-side {
+  width: 80px;          /* small + decorative */
+  opacity: 0.85;
+}
+
+.hero-side-left {
+  transform: rotate(-4deg);
+}
+
+.hero-side-right {
+  transform: rotate(4deg);
 }
 
 
