@@ -100,6 +100,10 @@ body::before {
   align-items: center;
 }
 
+.nav-home img.home-icon {
+  height: 32px; /* or whatever you already liked */
+}
+
 .nav-links {
   list-style: none;
   display: flex;
@@ -224,7 +228,17 @@ body::before {
    ========================================================= */
 .section-narrow {
   max-width: 900px;
-  height: 600px;
+  height: 500px;
+}
+
+.section-bio {
+  max-width: 900px;
+  height: 320px;
+}
+
+.section-personal {
+  max-width: 900px;
+  height: 800px;
 }
 
 /* =========================================================
@@ -291,6 +305,16 @@ body::before {
 .project-hero-container {
   max-width: 400px;
   height: 400px;
+  margin: 0 auto 3rem;
+  padding: 1.25rem;
+  background: rgba(248, 250, 252, 0.95);
+  border-radius: 1.5rem;
+  box-shadow: 0 24px 48px rgba(11, 19, 43, 0.18);
+}
+
+.bassmaster-hero-container {
+  max-width: 400px;
+  height: 300px;
   margin: 0 auto 3rem;
   padding: 1.25rem;
   background: rgba(248, 250, 252, 0.95);

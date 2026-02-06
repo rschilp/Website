@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,7 +20,6 @@
   <!-- Navigation -->
   <header class="navbar">
     <div class="nav-container">
-
       <nav>
         <ul class="nav-links">
           <li><a href="../projects.html">Projects</a></li>
@@ -32,37 +32,79 @@
   <section class="section project-detail">
     <h1 class="project-title">BassMaster</h1>
     <p class="project-tagline">
-      Data-driven fishing insights powered by machine learning.
+      Machine learning–driven insights for freshwater bass fishing.
     </p>
 
-    <img
-      src="../assets/bass.jpg"
-      alt="BassMaster preview"
-      class="project-hero"
-    />
+    <div class="bassmaster-hero-container">
+      <img
+        src="../assets/bass.jpg"
+        alt="BassMaster project preview"
+        class="project-hero"
+      />
+    </div>
 
     <h3>Overview</h3>
     <p>
-      BassMaster explores how environmental and behavioral data can be used to
-      predict fish size, location, and success rates.
+      BassMaster is a data-driven exploration of how environmental conditions,
+      fishing strategy, and behavioral patterns influence bass size and catch
+      success. The project transforms real-world fishing logs into a structured
+      machine learning pipeline, enabling predictive modeling and analysis over
+      factors such as lure choice, water temperature, time of day, and location.
+      Rather than relying on anecdotal intuition, BassMaster reframes fishing
+      decisions as a measurable, experiment-driven problem.
     </p>
 
-    <h3>What I Explored</h3>
+    <h3>Why I Built It</h3>
     <p>
-      This project blends a personal interest with structured experimentation,
-      turning real-world observations into a machine learning problem.
+      I built BassMaster to combine a long-standing personal hobby with my
+      academic focus in data science. Fishing generates naturally noisy,
+      imperfect data—making it an ideal domain for practicing feature
+      engineering, modeling assumptions, and error analysis. By working with
+      real, self-collected data instead of curated datasets, I wanted to better
+      understand how models behave under real-world constraints and how insights
+      can still emerge despite limited or biased samples.
+    </p>
+
+    <h3>My Role</h3>
+    <p>
+      I designed and implemented the full data pipeline end-to-end. This
+      included structuring raw fishing logs into a consistent tabular format,
+      engineering features from environmental and categorical signals, and
+      training both regression and classification models to predict fish size
+      and catch likelihood. I evaluated model performance using held-out data
+      and iteratively refined features to improve stability and interpretability,
+      with a focus on understanding which variables meaningfully influenced
+      outcomes rather than maximizing accuracy alone.
     </p>
 
     <h3>Tech & Concepts</h3>
     <ul>
-      <li>Python, Pandas, and data preprocessing</li>
-      <li>Classification and regression models</li>
-      <li>Feature engineering from real-world signals</li>
+      <li>Python, Pandas, NumPy</li>
+      <li>Data cleaning and feature engineering</li>
+      <li>Regression and classification modeling</li>
+      <li>Model evaluation and error analysis</li>
+      <li>Exploratory data analysis and visualization</li>
     </ul>
+
+    <h3>Key Takeaways</h3>
+    <ul>
+      <li>Real-world datasets are messy, incomplete, and biased—model robustness matters more than raw accuracy.</li>
+      <li>Feature engineering often has a larger impact on performance than model choice.</li>
+      <li>Interpreting model behavior is critical when results are used to guide real decisions.</li>
+      <li>Domain intuition is useful, but validating assumptions with data leads to better insights.</li>
+    </ul>
+
+    <div class="gallery-grid">
+
+      <img src="../assets/confusion_matrix.png" alt="Confusion matrix visualization" />
+      <img src="../assets/actual_expected.png" alt="Actual vs expected values plot" />
+      <img src="../assets/probability_distribution.png" alt="Probability distribution of fish sizes" />
+    </div>
   </section>
 
   <footer class="footer">
     <p>© 2026 Robert Schilp</p>
   </footer>
 </body>
+
 </html>
