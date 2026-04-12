@@ -251,7 +251,7 @@ body::before {
    ========================================================= */
 .section-narrow {
   max-width: 900px;
-  height: 500px;
+  height: 650px;
 }
 
 .section-bio {
@@ -355,6 +355,16 @@ body::before {
 .parkingpest-hero-container {
   max-width: 400px;
   height: 300px;
+  margin: 0 auto 3rem;
+  padding: 1.25rem;
+  background: rgba(248, 250, 252, 0.95);
+  border-radius: 1.5rem;
+  box-shadow: 0 24px 48px rgba(11, 19, 43, 0.18);
+}
+
+.premieralgebra-hero-container {
+  max-width: 370px;
+  height: 370px;
   margin: 0 auto 3rem;
   padding: 1.25rem;
   background: rgba(248, 250, 252, 0.95);
